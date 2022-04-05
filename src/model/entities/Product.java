@@ -29,10 +29,15 @@ public class Product {
 		this.price = price;
 	}
 	
+	//função uppercase no modelo static
 	public static String staticUpperCaseName(Product p) {
 		return p.getName().toUpperCase();
 	}
 	
+	//função uppercase no modelo non static
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
+	}
 
 	@Override
 	public String toString() {
